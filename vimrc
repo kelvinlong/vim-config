@@ -787,7 +787,7 @@ if has("gui_running")
   else
     set background=dark
   endif
-  colorscheme solarized
+  colorscheme desert
   if !exists("g:vimrcloaded")
       winpos 0 0
       if !&diff
@@ -797,5 +797,7 @@ if has("gui_running")
       endif
       let g:vimrcloaded = 1
   endif
+else
+  colorscheme ron
 endif
 :nohls
