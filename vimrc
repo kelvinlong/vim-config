@@ -777,6 +777,7 @@ iab taht       that
 iab Teh        The
 iab teh        the
 
+" changed the colorscheme by kelvin
 "-----------------------------------------------------------------------------
 " Set up the window colors and size
 "-----------------------------------------------------------------------------
@@ -787,7 +788,9 @@ if has("gui_running")
   else
     set background=dark
   endif
+  " for MacVim use desert
   colorscheme desert
+
   if !exists("g:vimrcloaded")
       winpos 0 0
       if !&diff
@@ -798,6 +801,8 @@ if has("gui_running")
       let g:vimrcloaded = 1
   endif
 else
+  " for command line vim use ron
   colorscheme ron
+
 endif
 :nohls
